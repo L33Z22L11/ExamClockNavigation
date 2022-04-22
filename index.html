@@ -29,7 +29,7 @@
       <div class="card">
         <a href="https://exam.cooo.site">
           <h3>考试时钟</h3>
-          <p class="sub">宝鸡中学 生产环境<br>exam.cooo.site</p>
+          <p class="sub">宝鸡中学 19/20级<br>exam.cooo.site</p>
         </a>
         <a href="https://ace.cooo.site">
           <h3>考试时钟时光局</h3>
@@ -40,20 +40,25 @@
           <p class="sub">加零开发中<br>e.thisis.host</p>
         </a>
       </div>
-      <form id="searchbar">
-        <!-- <div class="head">跳转</div> -->
-        <span>https://</span>
-        <input type="text" placeholder="输入学校代码" id="subdomain">
-        <span>.exam.thisis.host</span>
-        <a onclick="visitSubdomain()">访问</a>
-      </form>
-      <script>
-        function visitSubdomain() {
-          open('https\:\/\/' + searchbar.subdomain.value + '.exam.thisis.host');
-        }
-        searchbar.onkeydown = visitSubdomain();
-      </script>
+      <div class="space-between">
+        <form id="searchbar">
+          <!-- <div class="head">跳转</div> -->
+          <span>https://</span>
+          <input type="text" placeholder="学校代码" id="subdomain">
+          <span>.exam.thisis.host</span>
+          <a onclick="visitSubdomain()">访问</a>
+        </form>
+      </div>
     </div>
+    <script>
+      function visitSubdomain() { open('https\:\/\/' + searchbar.subdomain.value + '.exam.thisis.host'); }
+      searchbar.onkeydown = function (e) {
+        if (e.key == 'Enter') {
+          e.preventDefault();
+          visitSubdomain();
+        }
+      }
+    </script>
 
     <footer>© 2019-2022 Zhilu
       <a href="https://github.com/L33Z22L11" class="fa-brands fa-github"></a>
