@@ -8,6 +8,7 @@
   <title>考试时钟导航</title>
   <link rel="shortcut icon" href="https://exam.cooo.site/logo_g_64.png" type="image/x-icon">
   <link rel="stylesheet" href="https://exam.cooo.site/main.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css">
   <base target="_blank">
 </head>
@@ -39,6 +40,19 @@
           <p class="sub">加零开发中<br>e.thisis.host</p>
         </a>
       </div>
+      <form id="searchbar">
+        <!-- <div class="head">跳转</div> -->
+        <span>https://</span>
+        <input type="text" placeholder="输入学校代码" id="subdomain">
+        <span>.exam.thisis.host</span>
+        <a onclick="visitSubdomain()">访问</a>
+      </form>
+      <script>
+        function visitSubdomain() {
+          window.open('https\:\/\/' + searchbar.subdomain + '.exam.thisis.host');
+        }
+        searchbar.onkeydown = visitSubdomain();
+      </script>
     </div>
 
     <footer>© 2019-2022 Zhilu

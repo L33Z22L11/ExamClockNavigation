@@ -1,0 +1,27 @@
+#searchbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+    outline:0.1em solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.2rem;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-size: 0.75em;
+}
+#searchbar>*{
+    padding: 0.2em;
+    border-radius: 0;
+}
+#searchbar>.head,
+#searchbar>a{
+    outline:0.1em solid rgba(255, 255, 255, 0.2);
+}
+#searchbar>input {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: min-content;
+    color: #fff;
+    font: inherit;
+    width: 6em;
+}
