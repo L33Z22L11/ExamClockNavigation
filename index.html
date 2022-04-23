@@ -43,30 +43,26 @@
       <div class="space-between">
         <form id="searchbar">
           <!-- <div class="head">跳转</div> -->
-          <span>https://</span>
-          <input type="text" placeholder="学校代码" id="subdomain">
-          <span>.exam.thisis.host</span>
+          <div>http://<input type="text" placeholder="学校代码" id="subdomain">.exam.thisis.host</div>
           <a onclick="visitSubdomain()">访问</a>
         </form>
       </div>
     </div>
-    <script>
-      function visitSubdomain() { open('https\:\/\/' + searchbar.subdomain.value + '.exam.thisis.host'); }
-      searchbar.onkeydown = function (e) {
-        if (e.key == 'Enter') {
-          e.preventDefault();
-          visitSubdomain();
-        }
-      }
-    </script>
 
-    <footer>© 2019-2022 Zhilu
-      <a href="https://github.com/L33Z22L11" class="fa-brands fa-github"></a>
+    <footer class="space-between">
+      <span>© 2019-2022 Zhilu</span>
+      <span>
+        <a href="https://github.com/L33Z22L11" class="fa-brands fa-github"></a>
+        <a class="fa-brands fa-qq"></a>
+      </span>
+      <span>
+        <a onclick="addSchool()">添加学校</a>
+      </span>
     </footer>
   </div>
-  <link rel="stylesheet" href="https://fonts.font.im/css?family=Ubuntu:400,700">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pubsite/GenshinWebfont/rel1.css">
-
 </body>
+<script src="./main.js"></script>
+<link rel="stylesheet" href="https://fonts.font.im/css?family=Ubuntu:400,700">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pubsite/GenshinWebfont/rel1.css">
 
 </html>
