@@ -1,6 +1,5 @@
 #searchbar {
     font-size: .75em;
-
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
@@ -11,8 +10,9 @@
 }
 
 #searchbar>* {
-    padding: .1em .5em;
+    line-height: 1.5em;
 
+    padding: 0 .5em;
     border-radius: 0;
 }
 
