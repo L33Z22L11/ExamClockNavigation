@@ -15,17 +15,17 @@
 
 <body>
   <div id="main">
-    <div class="notify">
-      <h2><i class="fa-solid fa-circle-info"></i> 考试时钟已经迁移</h2>
-      <p>因账户调整，原域名thisis.host升级为网站公益托管服务(2021.6~2031.6)，如有部署需要，可与野生技协联系。</p>
+    <div class="wrapper">
+      <div class="notify">
+        <h2><i class="fa-solid fa-circle-info"></i> 考试时钟已经迁移</h2>
+        <p>因账户调整，原域名thisis.host升级为网站公益托管服务(2021.6~2031.6)，如有部署需要，可与野生技协联系。</p>
+      </div>
     </div>
 
     <div class="wrapper">
       <div class="logo"><b>考试时钟</b>导航</div>
-      <form id="searchbar">
-        <!-- <div class="head">跳转</div> -->
-        <div class="disabled" onclick="searchbar.subdomain.focus()">http://<input type="text" placeholder="输入学校代码"
-            id="subdomain">.cooo.site</div>
+      <form id="searchbar" onclick="searchbar.subdomain.focus()">
+        <div class="disabled">http://<input type="text" placeholder="输入学校代码" id="subdomain">.cooo.site</div>
         <div class="btn" onclick="visitSubdomain()">访问</div>
       </form>
       <div>
@@ -33,34 +33,39 @@
         <div class="card">
           <a href="https://exam.cooo.site">
             <h3>考试时钟</h3>
-            <p class="sub">宝鸡中学 19/20级<br>exam.cooo.site</p>
+            <p>宝鸡中学 19/20级</p>
+            <p class="disabled">exam.cooo.site</p>
           </a>
           <a href="https://ace.cooo.site">
             <h3>考试时钟时光局</h3>
-            <p class="sub">历史版本/文档<br>ace.cooo.site</p>
+            <p>历史版本/文档</p>
+            <p class="disabled">ace.cooo.site</p>
           </a>
           <a href="https://e.thisis.host">
             <h3>新考试时钟</h3>
-            <p class="sub">加零开发中<br>e.thisis.host</p>
+            <p>加零开发中</p>
+            <p class="disabled">e.thisis.host<br></p>
           </a>
         </div>
       </div>
     </div>
 
-    <footer class="sb space">
-      <span>© 2019-2022 Zhilu</span>
-      <span>
-        <a href="https://github.com/L33Z22L11" class="fa-brands fa-github"></a>
-        <a class="fa-brands fa-qq"></a>
-      </span>
-      <span>
-        <a onclick="addSchool()">添加学校</a>
-      </span>
+    <footer class="wrapper">
+      <div class="sb space">
+        <span>© 2019-2022 Zhilu</span>
+        <span>
+          <a href="https://github.com/L33Z22L11" class="fa-brands fa-github"></a>
+          <a class="fa-brands fa-qq"></a>
+        </span>
+        <span>
+          <a onclick="addSchool()">添加学校</a>
+        </span>
+      </div>
     </footer>
   </div>
 </body>
 <script src="./main.js"></script>
-<link rel="stylesheet" href="https://fonts.font.im/css?family=Ubuntu:400,700">
+<link rel="stylesheet" href="https://fonts.font.im/css?family=Roboto:400,700">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pubsite/GenshinWebfont/all.css">
 
 </html>

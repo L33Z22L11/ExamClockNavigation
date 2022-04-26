@@ -1,5 +1,5 @@
 function visitSubdomain() {
-  open('http\:\/\/' + searchbar.subdomain.value + '.exam.thisis.host');
+  open('http\:\/\/' + searchbar.subdomain.value + '.cooo.site');
 }
 
 searchbar.onkeydown = function (e) {

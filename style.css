@@ -4,7 +4,7 @@
 }
 
 html {
-    font: normal 16px 'Ubuntu', 'Genshin55W', sans-serif;
+    font: normal 16px 'Roboto', 'Genshin65W', sans-serif;
 }
 
 a {
@@ -32,7 +32,7 @@ a {
 .wrapper {
     width: 90vw;
     max-width: 960px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .wrapper>* {
@@ -40,7 +40,7 @@ a {
 }
 
 .logo {
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1.5em;
     width: fit-content;
     margin: auto;
@@ -55,6 +55,7 @@ a {
     line-height: 2em;
     position: relative;
     overflow: hidden;
+    cursor: text;
     border-radius: .5rem;
     outline: .1rem solid #48f;
 }
@@ -87,6 +88,7 @@ a {
     ;
 }
 
+.card>*:hover,
 .btn:hover {
     box-shadow: inset 0 0 1000px rgba(0, 0, 0, .2);
 }
@@ -99,7 +101,7 @@ a {
     margin: .5rem;
     padding: .5rem;
     border-radius: .5rem;
-    background: #ddd;
+    background: #eee;
 }
 
 footer {
