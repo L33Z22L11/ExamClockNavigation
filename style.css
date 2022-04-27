@@ -13,20 +13,26 @@ a {
     color: inherit;
 }
 
-#main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+a:hover{
+    color: #222;
 }
 
-.notify {
-    margin: 1em;
-    padding: .5em 1em;
-    color: #48f;
-    border-radius: .5rem;
-    outline: .1rem solid #48f;
-    background: #def;
+.disabled {
+    /* cursor: not-allowed; */
+    color: #aaa;
+}
+
+.between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
@@ -36,24 +42,48 @@ a {
 }
 
 .wrapper>* {
-    margin: 1rem;
+    margin: 1em 0;
+}
+
+.space {
+    margin: 0 -1em;
+}
+
+.space>* {
+    margin: 0 1em;
+}
+
+hr{
+    border: none;
+    height: 2rem;
+}
+
+hr.quad{
+    height: 4rem;
+}
+
+.notify {
+    padding: .5em 1em;
+    color: #48f;
+    border-radius: .5rem;
+    outline: .1rem solid #48f;
+    background: #def;
 }
 
 .logo {
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.5em;
     width: fit-content;
     margin: auto;
     padding: 0 0 0 1.75em;
     color: #333;
-    background: url(https://exam.cooo.site/logo_g_64.png) no-repeat;
-    background-size: contain;
+    background: url(https://exam.cooo.site/logo_g_64.png) no-repeat left center;
+    background-size: 1.5em;
 }
 
 #searchbar {
     font-size: 1.5em;
     line-height: 2em;
-    position: relative;
     overflow: hidden;
     cursor: text;
     border-radius: .5rem;
@@ -64,28 +94,16 @@ a {
     padding: 0 1em;
 }
 
-.disabled {
-    /* cursor: not-allowed; */
-    color: #aaa;
-}
-
 #searchbar input {
     font: inherit;
-    width: max-content;
     text-align: center;
-    color: #48f;
     border: none;
 }
 
 #searchbar .btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
     cursor: pointer;
     color: #fff;
     background: #48f;
-    ;
 }
 
 .card>*:hover,
@@ -95,36 +113,23 @@ a {
 
 .card {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.5rem;
 }
 
 .card>* {
-    margin: .5rem;
+    margin:0 .5rem .5rem ;
     padding: .5rem;
     border-radius: .5rem;
     background: #eee;
 }
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     box-sizing: border-box;
     width: 100%;
     padding: 1em;
     color: #aaa;
     background: #fff;
-}
-
-
-
-.sb {
-    display: flex;
-    justify-content: space-between;
-}
-
-.space {
-    margin: 0 -.5em;
-}
-
-.space>* {
-    margin: 0 .5em;
 }
